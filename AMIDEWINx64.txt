@@ -1,0 +1,52 @@
+AMI ROM Tool - AMIDEWINx64-5.21.0057
+
+THIS PROGRAM IS COPYRIGHTED MATERIAL AND PROTECTED BY APPLICABLE COPYRIGHT LAWS AND INTERNATIONAL TREATY PROVISIONS.
+
+THE PROGRAM AND ITS DOCUMENTATION ARE COPYRIGHTED BY THE ORIGINAL PROGRAMMER/AUTHOR (COPYRIGHT HOLDER).
+
+ALL RIGHTS ARE RESERVED CONCERNING FUTURE CHANGES OF THE NAME AND CONTENTS OF THIS DISTRIBUTION PACKAGE.
+
+NO CHANGES MUST BE MADE FOR ANY REASONS AT ANY TIME BY ANYBODY IN ANY ASPECT, INCLUDING, BUT NOT LIMITED TO, MODIFICATION OF THE COPYRIGHT NOTICE OR CHANGES OF THE COMPILED BINARIES HEREBY ALTERING THE ORIGINALLY INTENDED PROGRAM EXECUTION FLOW.
+
+THIS PROGRAM IS DESIGNED FOR USE ONLY WITH AMI SOFTWARE PRODUCTS.
+
+USING THIS PROGRAM TO MODIFY OR REVERSE-ENGINEER OTHER SOFTWARE PRODUCTS IS PROHIBITED.
+
+AMI SPECIFICALLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, AND ALL LIABILITY, INCLUDING CONSEQUENTIAL AND OTHER INDIRECT DAMAGES, FOR THE USE OF THIS SOFTWARE, INCLUDING LIABILITY FOR INFRINGEMENT OF ANY PROPRIETARY RIGHTS.
+
+AMI DOES NOT ASSUME ANY REASONS AT ANY TIME BY ANYBODY IN ANY ASPECT.
+
+
+
+
+
+Source Control Location :
+	SS: AptioV;$/AptioV/RomUtils/AMIDEWIN/64;
+
+Reference Document :
+	Readme.txt
+
+Known Issues :
+
+
+Release Notes:
+==============================================================================
+5.16
+	1.Modifying SMBIOS Type4 Processor Information. [EIP 169809]
+	2.Removing SMI 0x20/24 while Get BIOS info.
+==============================================================================
+5.15
+	1.Fix AMIDEWIN /dump 3 doesn't show type 3 Chassis SKU Number. [EIP 158891]
+==============================================================================
+5.14
+	1.AMIDEWIN supports the Type0 offest04 Vendor Name.[EIP 136110]
+	* SMIBIOS Module needs 5.004_SmBios_03 or later version to support functions properly.
+==============================================================================
+5.13.1
+	1.The buffer length is not enough for 16MB rom when call smi0x25. [EIP 140950]
+==============================================================================
+5.13
+	1.Version number changed for AptioV. Sync AMIDEWINX64_2.13.
+	2.After Clear the System Product Name by DMIEDIT tool under Shell, it shows abnormal string. [EIP 136093]
+	3.Make sure to add SMIFunc0x20 before SMIFunc0x25 and SMIFunc0x24.
+==============================================================================
